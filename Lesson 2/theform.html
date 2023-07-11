@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The First Form</title>
+</head>
+<body>
+    <header>
+        <div><h1>The Form Page</h1></div>
+    </header>
+    <main>
+        <!--THE FORM-->
+        <!--Варіант 1-->
+        <label for="text_field">
+          Text field
+          <input
+            id="text_field"
+            name="text_field"
+            type="text"
+            placeholder="write something here"
+            value="somewhere there"
+          />
+        </label>
+        <!--Варіант 2-->
+        <label for="text_field2">
+          Text field </label>
+          <input
+            id="text_field2"
+            name="text_field2"
+            type="text"
+            placeholder="write something here"
+            value="somewhere there"
+          />
+          </label>
+        <!--Варіант 3-->
+            <input
+              id="text_field3"
+              name="text_field3"
+              type="text"
+              placeholder="write something here"
+              value="somewhere there"
+            />
+            <label for="text_field3">
+              Text field </label>
+        <!--Варіант 4-->
+        <input
+            id="text_field4"
+            name="text_field4"
+            type="text"
+            placeholder="write something here"
+            value="somewhere there"
+            title="Text field"
+          />
+          <br>
+          <br>
+      <form action="https://fom.in.ua/echo" method="post" target="_blank">
+      <!--THE OTHER TAGS-->
+      <fieldset>
+      <div>
+        <legend>Login form</legend>
+        <label for="login">Username<span style="color: red;">*</span>
+      <input id="login" name="login" placeholder="Username" type="text" required>
+    </label>
+    </div>
+    <div>
+      <label for="password">Password<span style="color: red;">*</span>
+        <input type="password" name="password" id="password" placeholder="Password"/>
+      </label>
+    </div>
+</fieldset>
+  <fieldset>
+    <legend>Radio Field</legend>
+    <div>
+    <label for="radio1">Female:
+      <input type="radio" name="radio" id="radio1" value="woman" checked/>
+    </label>
+    </div>
+    <div>
+      <label for="radio2">Male:
+        <input type="radio" name="radio" id="radio2" value="male"/>
+      </label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Checkbox</legend>
+    <div>
+      <label for="checkbox1">Blue:
+        <input type="checkbox" id="checkbox1" name="color" value="blue" checked>
+      </label>
+    </div>
+    <div>
+      <label for="checkbox2">Green:
+        <input type="checkbox" id="checkbox2" name="color" value="green">
+      </label>
+    </div>
+    <div>
+      <label for="checkbox3">White:
+        <input type="checkbox" id="checkbox3" name="color" value="white">
+      </label>
+    </div>
+    <div>
+      <label for="range">Range:
+        <input type="range" id="range" name="range" value="88" min="1" max="100" step="10">
+      </label>
+    </div>
+      <div>
+        <label for="color">Color:
+          <input type="color" name="color" id="color" value="#0077A7"/>
+        </label>
+      </div>
+    <div>
+      <label for="date">Date:
+        <input type="date" name="date" id="date">
+      </label>
+    </div>
+<div>
+  <label for="file">File:
+    <input type="file" name="file" id="file" multiple/>
+  </label>
+</div>
+<div>
+  <label for="email">Enter emaild address:
+    <input type="email" name="email" id="email" placeholder="test@gmail.com">
+  </label>
+</div>
+<div>
+  <label for="tel">Tel:
+    <input type="tel" id="tel" name="tel" placeholder="+3803335588"/>
+  </label>
+</div>
+<!--SELECT-->
+<div>
+  <label for="select">Fruits:
+    <select name="select" id="select">
+      <option value="orange">Orange</option>
+      <option value="lemon"disabled>Lemon</option>
+      <option value="banana"select>Banana</option>
+    </select>
+  </label>
+</div>
+<div>
+  <label for="select2">Fruits:
+    <select name="select" id="select" multiple size="2">
+      <option value="1">Orange</option>
+      <option value="2"disabled>Lemon</option>
+      <option value="3"select>Banana</option>
+    </select>
+  </label>
+</div>
+<!--TEXTAREA-->
+<div>
+  <label for="textarea">Textarea:
+    <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="40" placeholder="Type your text here"></textarea>
+  </label>
+</div>
+  </fieldset>
+  <fieldset>
+    <legend>Buttons</legend>
+    <div><button disable>Disabled button</button></div>
+    <div><button type="submit">Submit Form</button></div>
+    <div><button type="reset">Reset form</button></div>
+  </fieldset>
+</form>
+    </main>
+</body>
+</html>
