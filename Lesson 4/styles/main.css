@@ -1,0 +1,60 @@
+/* 1 css by tag */
+h2 {
+  font-size: 25px;
+  width: 500px;
+  background-color: cadetblue;
+  color: white;
+  text-align: center;
+}
+/* 2 css by attribute */
+img[src^="./moon"] {
+  height:115px;
+  width: 125px;
+  border-bottom:2px solid black;
+}
+/* 3 css by type */
+input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+/* 4 css by class */
+.lora {
+  font-size: 25px;
+  background-color: darkgreen;
+  color: cornflowerblue;
+  font-weight: 300;
+  width: 125px;
+}
+/* 5 css by id */
+#thebutton {
+  font-size: 25px;
+  color: darkmagenta;
+  background-color: white;
+}
+/* 6 css by ends with */
+a[href$="com"]{
+  color: red;
+  font-weight: 800;
+  font-size: 100px;
+  }
+  /* 7 css by pseudo-class hover */
+  a[href*="https://www.w3schools.com/css/css_form.asp"]:hover {
+color: brown;
+font-size: 50px;
+font-style: italic;
+  }
+  /* 8 css by focus*/
+input[type="text"]:focus{
+  border-color: deeppink;
+  border-radius: 55%;
+}
+/* 9 css by inner tag */
+ol>li{
+  color: chocolate;
+}
+/* 10 css by contains word*/
+button[data-action~="delete"]{
+  border-radius: 110%;
+  }
