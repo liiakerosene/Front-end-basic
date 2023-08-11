@@ -58,3 +58,7 @@ ol>li{
 button[data-action~="delete"]{
   border-radius: 110%;
   }
+/* by several classes */
+.goddess.lora {
+  font-style: italic;
+}
