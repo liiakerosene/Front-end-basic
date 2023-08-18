@@ -1,0 +1,97 @@
+h1 {
+  color: darkcyan;
+  font-size: 55px;
+  font-style: italic;
+}
+/* h2 {
+    color: grey;
+} */
+/* специфічність */
+/* без пробілу, бо пробіл - інший оператор */
+/* по двом класам */
+.title.title-3 {
+  color: greenyellow;
+}
+/* по класу */
+/* через кому декілька селекторів - тегів */
+.title,
+h2 {
+  font-style: bold;
+  color: forestgreen;
+  font-size: 45px;
+  font-weight: 800;
+}
+/* по айдішці */
+#conclusion_p {
+  font-weight: 800;
+}
+
+ol li a {
+  color: lightslategray;
+  padding: 2cm;
+}
+
+ol > li a {
+  color: rgb(72, 178, 180);
+}
+
+/* div + span {
+  color: gold;
+}
+
+div ~ p {
+  color: lightsalmon;
+} */
+nav {
+  background-color: blueviolet;
+}
+
+div.example {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+}
+
+/* block html styles */
+
+.content:nth-child(1){
+  background-color: plum;
+  padding: 10px;
+}
+.content:nth-child(2) {
+  background-color: rgb(141, 97, 39);
+  width: 510px;
+  padding: 20px;
+  border: solid 2px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+/* border-box - якщо так - то відс приміняється до усіх блоків, включно з маргінами, падінгами тощо 
+content-box - тільки для контенту + маргіни, падінги тощо*/
+
+.content:nth-child(3) {
+  background-color: rgb(89, 132, 170);
+  padding: 30px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgb(183, 205, 224);
+}
+
+
+/* пробіл - обирає усі саб-елементи головного елемента */
+/* + впливає на елемент що йде одразу після першого вказоного div + span - застилисть спан */
+/* специфічність 
+id - 100
+class - 10
+type - 1
+attrivute - 10
+universal 0 */
+
+/* специфічність - багато нулів */
+/* 0,0,0,0,0,0,0,0 - кожен має значення, з кінця
+1 - тег
+2 - клас
+3 - айді
+4 - інлайнові стилі ( <style ="">)
+5 - імпортант*/

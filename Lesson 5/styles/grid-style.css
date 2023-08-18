@@ -1,0 +1,91 @@
+body {
+  color: #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.main-container {
+  max-width: 1335px;
+  margin: 0;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-item {
+  height: 750px;
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: solid 1px black;
+  margin: 20px;
+}
+
+/* .grid-item-link {
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    color: currentColor;
+  } */
+/* НЕ ЗМОГЛА ЗРОБИТИ КЛІКАБЕЛЬНИМ КОЖЕН АЙТЕМ - ТІЛЬКИ ВЕСЬ КОНТЕЙНЕР СТОРІНКИ СТАВ */
+.grid-item-wrapper {
+  background: #e8deeb;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-item:hover .grid-item-wrapper {
+  padding: 2% 2%;
+  margin: -2% -2%;
+}
+
+.grid-item-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.grid-item-content {
+  padding: 35 20px 20px 20px;
+}
+
+.item-title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  display: block;
+}
+
+.item-country {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.item-excerpt {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.more-info {
+  bottom: 0;
+  margin-bottom: 25px;
+  padding-left: 0;
+  font-size: 12px;
+}
+
+img {
+  height: 200px;
+  width: 250px;
+}
